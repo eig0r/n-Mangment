@@ -1,0 +1,64 @@
+<template name="ActiveAlarms">
+{{> SideNav}}
+<h1>Active Alarms</h1>
+<form>
+   <table class="table table-striped table-bordered table-hover">
+   <thead>
+   <tr>
+
+        <th>Site ID</th>
+        <th>AlarmName</th>
+        <th>Date</th>
+        <th>Shift Eng</th>
+        <th>PG</th>
+        <th>Access</th>
+        <th>Status</th>
+        <th>Comment</th>
+
+  </tr>
+  </thead>
+  <tbody>
+{{# each SiteAlarm}}
+  <tr>
+      <td>{{ SiteID}}</td>
+      <td>{{ AlarmName }}</td>
+      <td>{{ createdAt }}</td>
+       <td>{{ ShiftEng }}</td>
+      <td>{{PG}}</td>
+      <td>{{Access}}</td>
+      <td>{{Status}}</td>
+      <td>{{Comment}}</td>
+
+
+          <td>{{ Reason }}</td>
+
+
+  </tr>
+{{/each}}
+  </tbody>
+  </table>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</template>

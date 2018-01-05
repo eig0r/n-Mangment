@@ -1,0 +1,54 @@
+<template name="Home">
+
+
+
+  <h4> Welcome back engineer
+  <input type="text" class="form-control" id="Drname" name="Dignoses" value="{{reservPatients.drname}}">
+
+  <input type="text" class="form-control" id="test" name="test" value="{{testo.Status}}" hidden="true">
+
+  <input type="text" class="form-control" id="todayattendTime" name="todayattendTime" value="{{AttendaceStaffSetTime.time}}" hidden="true">
+
+
+  <form class="new-Site-Alarm" >
+  <div class="form-group">
+
+
+
+    <div class="col-xs-4">
+
+     <label>October</label>
+    <input type="text" class="form-control" id="OctEng" name="OctEng" >
+    </div>
+
+
+    <div class="col-xs-4">
+    <label>Mohandsen</label>
+    <input type="text" class="form-control" id="MohandsenEng" name="MohandsenEng" >
+    </div>
+
+
+  <div class="col-xs-4">
+    <label>Maadie</label>
+<input type="text" class="form-control" id="MaadieEng" name="MaadieEng" >
+    </div>
+
+
+
+
+  </div>
+
+
+  </form>
+    <button id="OfficeShifEng" class="OfficeShifEng btn btn-primary">Update</button>
+
+Please Enter to start your day...</h4>
+
+  <button type="submit"   class="btn btn-primary"  id="button" >Start</button>
+
+
+
+
+
+
+</template>

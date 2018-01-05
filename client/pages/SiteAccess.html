@@ -1,0 +1,179 @@
+<template name="SiteAccess">
+{{> SideNav}}
+<h1>Access Negotiator </h1>
+<form>
+   <table class="table table-striped table-bordered table-hover">
+   <thead>
+   <tr>
+
+     <th>Site ID</th>
+
+      <th>Site Address</th>
+ <th>Office</th>
+
+     <th>Negotiator Name</th>
+
+     <th>Problem description</th>
+     <th>Impact </th>
+      <th>Date </th>
+      <th>Negotiator informing time </th>
+      <th>Access Clearance Time  </th>
+      <th>solved Y/N </th>
+      <th>solving Duration </th>
+      <th>Negotiator Feedback </th>
+      <th>Repeated Case</th>
+
+  </tr>
+  </thead>
+  <tbody>
+{{# each AccessNegotiator}}
+  <tr>
+      <td>{{ SiteID}}</td>
+      <td>{{ SiteAddress }}</td>
+      <td>{{ Office }}</td>
+      <td>{{AssignedNegotiatorName}}</td>
+      <td>{{ Problemdescription }}</td>
+      <td>{{  Impact }}</td>
+      <td>{{date}}</td>
+      <td>{{ Negotiatorinformingtime }}</td>
+      <td>{{ AccessClearanceTime  }}</td>
+      <td>{{ Solved }}</td>
+      <td>{{ solvingDuration }}</td>
+      <td>{{ NegotiatorFeedback }}</td>
+      <td>{{ RepeatedCase  }}</td>
+
+
+
+  </tr>
+{{/each}}
+  </tbody>
+  </table>
+  </form>
+
+
+  <h1>Access Coroprate </h1>
+  <form>
+     <table class="table table-striped table-bordered table-hover">
+     <thead>
+     <tr>
+
+       <th>Site ID</th>
+       <th>Office</th>
+        <th>Site Address</th>
+       <th>Date</th>
+       <th>Access Type</th>
+       <th>Negotiator Name</th>
+       <th>Access Clear time </th>
+       <th>Comment </th>
+
+    </tr>
+    </thead>
+    <tbody>
+  {{# each AccessCoroprate}}
+    <tr>
+        <td>{{ SiteID}}</td>
+        <td>{{ Office }}</td>
+        <td>{{ SiteAddress }}</td>
+        <td>{{createdAt}}</td>
+        <td>{{ AccessType }}</td>
+        <td>{{ NegName }}</td>
+        <td>{{ClearanceTime}}</td>
+        <td>{{ Reason }}</td>
+
+
+    </tr>
+  {{/each}}
+    </tbody>
+    </table>
+    </form>
+
+
+
+
+    <h1>Access VF </h1>
+    <form>
+       <table class="table table-striped table-bordered table-hover">
+       <thead>
+       <tr>
+
+         <th>Site ID</th>
+         <th>Office</th>
+          <th>Site Address</th>
+         <th>Date</th>
+         <th>Access Type</th>
+         <th>Negotiator Name</th>
+         <th>Access Clear time </th>
+         <th>Comment </th>
+
+      </tr>
+      </thead>
+      <tbody>
+    {{# each AccessVF}}
+      <tr>
+          <td>{{ SiteID}}</td>
+          <td>{{ Office }}</td>
+          <td>{{ SiteAddress }}</td>
+
+          <td>{{createdAt}}</td>
+          <td>{{ AccessType }}</td>
+          <td>{{ NegName }}</td>
+          <td>{{ClearanceTime}}</td>
+          <td>{{ Reason }}</td>
+
+
+      </tr>
+    {{/each}}
+      </tbody>
+      </table>
+      </form>
+
+
+
+
+      <h1>Access ET </h1>
+      <form>
+         <table class="table table-striped table-bordered table-hover">
+         <thead>
+         <tr>
+
+           <th>Site ID</th>
+           <th>Office</th>
+            <th>Site Address</th>
+           <th>Date</th>
+           <th>Access Type</th>
+           <th>Negotiator Name</th>
+           <th>Access Clear time </th>
+           <th>Comment </th>
+
+        </tr>
+        </thead>
+        <tbody>
+      {{# each AccessET}}
+        <tr>
+            <td>{{ SiteID}}</td>
+            <td>{{ Office }}</td>
+            <td>{{ SiteAddress }}</td>
+
+            <td>{{createdAt}}</td>
+            <td>{{ AccessType }}</td>
+            <td>{{ NegName }}</td>
+            <td>{{ClearanceTime}}</td>
+            <td>{{ Reason }}</td>
+
+
+        </tr>
+      {{/each}}
+        </tbody>
+        </table>
+        </form>
+
+
+
+
+
+
+
+
+
+
+</template>

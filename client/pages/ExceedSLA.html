@@ -1,0 +1,64 @@
+<template name="ExceedSLA">
+{{> SideNav}}
+<h1>ExceedSLA</h1>
+<form>
+   <table class="table table-striped table-bordered table-hover">
+   <thead>
+   <tr>
+
+     <th>Site ID</th>
+     <th>Site Address</th>
+
+        <th>Date</th>
+        <th>Area</th>
+         <th>Office</th>
+        <th>Time/Connect</th>
+        <th> Time/DisConnect</th>
+
+            <th>Reason</th>
+
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+      <td>{{ SiteCode}}</td>
+      <td>{{ SiteName }}</td>
+      <td>{{Date}}</td>
+      <td>{{ Area }}</td>
+       <td>{{ Office }}</td>
+      <td>{{ Time/Connect }}</td>
+      <td>{{ Time/DisConnect }}</td>
+
+          <td>{{ Reason }}</td>
+
+
+  </tr>
+
+  </tbody>
+  </table>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</template>

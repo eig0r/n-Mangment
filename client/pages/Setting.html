@@ -1,0 +1,39 @@
+<template name="Setting">
+{{> SideNav}}
+
+<h1>Setting</h1>
+<div class="panel-heading">
+  <h4>Mangment Team</h4>
+
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">ِNew User</a>
+    </div>
+<div id="collapse01" class="panel-collapse collapse off">
+<div class="panel-body">
+
+    <form>
+    <label>Name</label>
+    <input type="text" class="form-control" id="name" name="name" >
+  </form>
+  <form>
+  <label>Account Num.</label>
+  <input type="text" class="form-control" id="account" name="account" >
+</form>
+<form>
+    <label>ID</label>
+    <input type="text" class="form-control" id="nationalID" name="nationalID" >
+  </form>
+
+    <form>
+    <label>Mobile</label>
+    <input type="text" class="form-control" id="mobile" name="mobile" >
+  </form>
+
+  <button id="AddUser" class="btn btn-primary">Add</button>
+
+  <p><label></label></p>
+</div>
+</div>
+
+
+
+</template>

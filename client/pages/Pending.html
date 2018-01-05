@@ -1,0 +1,58 @@
+<template name="Pending">
+{{> SideNav}}
+<h1>Pending </h1>
+<form>
+   <table class="table table-striped table-bordered table-hover">
+   <thead>
+
+   <tr>
+
+     <th>Site ID</th>
+     <th>Alarm Name</th>
+     <th>Date</th>
+     <th>Area</th>
+     <th>Office</th>
+     <th>Pending Issue</th>
+     <th>Comment</th>
+
+  </tr>
+  </thead>
+  <tbody>
+ {{# each Pending}}
+  <tr>
+      <td>{{ SiteID}}</td>
+      <td>{{AlarmName}}</td>
+      <td>{{createdAt}}</td>
+      <td>{{ Area }}</td>
+       <td>{{ Office }}</td>
+      <td>{{Status}}</td>
+      <td>{{LastUpdate}}</td>
+  </tr>
+{{/each}}
+  </tbody>
+  </table>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</template>
